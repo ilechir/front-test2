@@ -9,7 +9,7 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  URL = 'http://localhost:8080/personas/' ;
+  URL = 'https://backend-ic.up.railway.app/personas/' ;
   constructor(private http: HttpClient) { }
 
   public getPersona(): Observable<persona>{

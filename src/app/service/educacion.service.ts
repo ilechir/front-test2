@@ -8,7 +8,7 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
 
-  URL = 'https://backend-ic.up.railway.appfirebase/educacion'
+  URL = 'https://backend-ic.up.railway.app/educacion'
 
   constructor(private httpClient: HttpClient) { }
 
