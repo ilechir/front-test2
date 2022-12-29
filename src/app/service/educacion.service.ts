@@ -8,7 +8,7 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
 
-  URL = 'http://localhost:8080/educacion'
+  URL = 'https://backend-ic.up.railway.appfirebase/educacion'
 
   constructor(private httpClient: HttpClient) { }
 
@@ -20,6 +20,7 @@ export class EducacionService {
   public detail(id: number): Observable<Educacion>{
     return this.httpClient.get<Educacion>(this.URL + `/detail/${id}`);
   }
+
 
   public save(educacion: Educacion): Observable<any>{
     return this.httpClient.post<any>(this.URL + '/create', educacion);
